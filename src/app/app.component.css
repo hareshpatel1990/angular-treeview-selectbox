@@ -1,3 +1,30 @@
-p {
-  font-family: Lato;
+.bubble_background{
+  background-image: url(assets/img/Login_Background.png);
+  padding:10px;
+  border-radius: 0.25rem;
+}
+
+.bubble_background > div > .label
+.bubble_background > div > .value{
+  width:50%;
+  color:#fff;
+}
+
+.bubble_background select{
+  background-color: transparent;
+  color:white;
+  border-color:transparent;
+  padding:0px;
+  height: calc(0.9em + 0.5rem + 1px);
+}
+.bubble_background select:focus{
+  background-color: transparent;
+  color:white;
+  border-color:transparent;
+  padding:0px;
+  box-shadow: none;
+}
+
+.bubble_background .customer_type_icon{
+  width: 42px;
 }
