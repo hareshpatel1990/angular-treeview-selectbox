@@ -11,7 +11,6 @@ export class AppComponent {
   faChevronDown = faChevronDown;
 
   seletedOptionType = '';
-  seletedClientId = '';
   seletedId = '';
   seletedText = 'Click here for options!';
 
@@ -89,7 +88,9 @@ export class AppComponent {
     ],
   };
 
-  onSelected(optionType,id,text){
-
+  onSelected(optionType, id, text) {
+    this.seletedOptionType = optionType;
+    this.seletedId = id;
+    this.seletedText = text;
   }
 }
