@@ -16,7 +16,7 @@ export class AppComponent {
 
   showFlag: boolean = false;
 
-  data0 = {
+  data = {
     id: 339,
     name: 'Tgroup',
     clientId: 'G10100000019',
@@ -70,7 +70,7 @@ export class AppComponent {
     branches: [],
   };
 
-  data = {
+  data1 = {
     id: 342,
     name: 'Tcomp3',
     clientId: 'I10100000065',
@@ -89,6 +89,12 @@ export class AppComponent {
       },
     ],
   };
+
+  constructor() {
+    this.seletedOptionType = this.data.type;
+    this.seletedId = this.data.clientId;
+    this.seletedText = this.data.name;
+  }
 
   onSelected(optionType, id, text) {
     this.seletedOptionType = optionType;
