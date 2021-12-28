@@ -1,4 +1,6 @@
 import { Component, VERSION } from '@angular/core';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons/faChevronDown';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons/faCoffee';
 
 @Component({
   selector: 'my-app',
@@ -6,14 +8,21 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Angular ' + VERSION.major;
+  faCoffee = faCoffee;
+  faChevronDown = faChevronDown;
 
-  seletedClientId = 'G10100000019';
   customerType = 'G';
+
+  seletedOptionType = '';
+  seletedClientId = '';
+  seletedId = '';
+  seletedText = '';
+
   data = {
     id: 339,
     name: 'Tgroup',
     clientId: 'G10100000019',
+    type: 'G',
     companies: [
       {
         id: 340,
@@ -58,6 +67,25 @@ export class AppComponent {
             companyId: 342,
           },
         ],
+      },
+    ],
+  };
+
+  dataCompany = {
+    id: 342,
+    name: 'Tcomp3',
+    clientId: 'I10100000065',
+    type: 'I',
+    branches: [
+      {
+        id: 233,
+        name: '2normal',
+        companyId: 342,
+      },
+      {
+        id: 234,
+        name: 'offshore',
+        companyId: 342,
       },
     ],
   };

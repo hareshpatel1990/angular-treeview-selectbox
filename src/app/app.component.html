@@ -16,13 +16,57 @@
         />
       </div>
       <div class="d-flex flex-column flex-grow-1">
-      <div class="d-flex flex-row ml-1">
-        <div class="w-50 text-light">Customer ID</div>
-        <div class="w-50 text-light text-right">{{ seletedClientId }}</div>
-      </div>
+        <div class="d-flex flex-row ml-1">
+          <div class="w-50 text-light">Select Customer !</div>
+          <div class="w-50 text-light text-right">
+            <fa-icon [icon]="faChevronDown"></fa-icon>
+          </div>
+        </div>
         <div class="d-flex flex-row ml-1">
           <div class="w-50 text-light">Customer ID</div>
           <div class="w-50 text-light text-right">{{ seletedClientId }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column">
+      <div *ngIf="data.type == 'G'">
+        <div class="d-flex flex-row">
+          <div class="option-icon">
+            <img
+              src="assets/img/Group_Customer.svg"
+              class="rounded-circle customer_type_icon"
+              alt="Customer Type"
+            />
+          </div>
+          <div class="option-text flex-fill">
+            {{ data.id }} - {{ data.name }}
+          </div>
+        </div>
+        <div class="d-flex flex-column" *ngFor="let company of data.companies">
+          <div class="d-flex flex-row">
+            <div class="option-icon">
+              <img
+                src="assets/img/Individual_Customer.svg"
+                class="rounded-circle customer_type_icon"
+                alt="Customer Type"
+              />
+            </div>
+            <div class="option-text flex-fill">
+              {{ company.id }} - {{ company.name }}
+            </div>
+          </div>
+          <div class="d-flex flex-row" *ngFor="let branch of company.branches">
+            <div class="option-icon">
+              <img
+                src="assets/img/Branches.svg"
+                class="rounded-circle customer_type_icon"
+                alt="Customer Type"
+              />
+            </div>
+            <div class="option-text flex-fill">
+              {{ branch.id }} - {{ branch.name }}
+            </div>
+          </div>
         </div>
       </div>
     </div>
