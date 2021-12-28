@@ -97,7 +97,10 @@
       </div>
 
       <div *ngIf="data.type == 'I'">
-        <div class="d-flex flex-row border-bottom selectable">
+        <div
+          class="d-flex flex-row border-bottom selectable"
+          (click)="onSelected('I', data.clientId, data.name)"
+        >
           <div class="option-icon group-icon">
             <img
               src="assets/img/Individual_Customer.svg"
@@ -109,7 +112,11 @@
             {{ data.id }} - {{ data.name }}
           </div>
         </div>
-        <div class="d-flex flex-column" *ngFor="let branch of data.branches">
+        <div
+          class="d-flex flex-column"
+          *ngFor="let branch of data.branches"
+          (click)="onSelected('B', branch.id, branch.name)"
+        >
           <div class="d-flex flex-row border-bottom selectable">
             <div class="option-icon company-icon">
               <img

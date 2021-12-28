@@ -14,7 +14,7 @@ export class AppComponent {
   seletedId = '';
   seletedText = 'Click here for options!';
 
-  data = {
+  data0 = {
     id: 339,
     name: 'Tgroup',
     clientId: 'G10100000019',
@@ -68,7 +68,7 @@ export class AppComponent {
     branches: [],
   };
 
-  data1 = {
+  data = {
     id: 342,
     name: 'Tcomp3',
     clientId: 'I10100000065',
