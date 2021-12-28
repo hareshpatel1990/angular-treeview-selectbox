@@ -1,5 +1,5 @@
 .bubble_background {
-  background-image: url(assets/img/Login_Background.png);
+  background-color: blue;
   padding: 10px;
   border-radius: 0.25rem;
 }
@@ -26,4 +26,22 @@
 
 .bubble_background .customer_type_icon {
   width: 42px;
+}
+
+.group-icon {
+  padding-left: 1rem;
+}
+
+.company-icon {
+  padding-left: 3rem;
+}
+
+.branch-icon {
+  padding-left: 5rem;
+}
+
+.group-icon,
+.company-icon,
+.branch-icon {
+  padding-right: 0.5rem;
 }
