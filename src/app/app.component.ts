@@ -14,6 +14,8 @@ export class AppComponent {
   seletedId = '';
   seletedText = 'Click here for options!';
 
+  showFlag: boolean = false;
+
   data0 = {
     id: 339,
     name: 'Tgroup',
@@ -92,5 +94,6 @@ export class AppComponent {
     this.seletedOptionType = optionType;
     this.seletedId = id;
     this.seletedText = text;
+    this.showFlag = false;
   }
 }
