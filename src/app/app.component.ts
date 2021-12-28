@@ -8,13 +8,12 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons/faCoffee';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  faCoffee = faCoffee;
   faChevronDown = faChevronDown;
 
   seletedOptionType = '';
   seletedClientId = '';
   seletedId = '';
-  seletedText = '';
+  seletedText = 'Click here for options!';
 
   data = {
     id: 339,
@@ -89,4 +88,8 @@ export class AppComponent {
       },
     ],
   };
+
+  onSelected(optionType,id,text){
+
+  }
 }
