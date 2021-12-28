@@ -11,8 +11,6 @@ export class AppComponent {
   faCoffee = faCoffee;
   faChevronDown = faChevronDown;
 
-  customerType = 'G';
-
   seletedOptionType = '';
   seletedClientId = '';
   seletedId = '';
@@ -69,13 +67,15 @@ export class AppComponent {
         ],
       },
     ],
+    branches: [],
   };
 
-  dataCompany = {
+  data1 = {
     id: 342,
     name: 'Tcomp3',
     clientId: 'I10100000065',
     type: 'I',
+    companies: [],
     branches: [
       {
         id: 233,
