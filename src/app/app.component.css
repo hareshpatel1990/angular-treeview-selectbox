@@ -44,15 +44,21 @@
 .company-icon,
 .branch-icon {
   padding-right: 0.5rem;
-  padding-bottom: 0.2rem;
-  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
 }
 
 .option-text {
-  padding-bottom: 0.2rem;
-  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+  padding-top: 0.3rem;
 }
 
 .elevation {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.selectable:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
 }
